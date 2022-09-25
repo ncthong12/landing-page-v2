@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// routing
+import Routes from 'routes';
+import ThemeCustomization from 'themes';
+import NavigationScroll from 'layout/NavigationScroll';
+import Locales from 'ui-component/Locales';
+import RTLLayout from 'ui-component/RTLLayout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// project imports
+
+
+// auth provider
+
+// import { AWSCognitoProvider as AuthProvider } from 'contexts/AWSCognitoContext';
+// import { JWTProvider as AuthProvider } from 'contexts/JWTContext';
+// import { Auth0Provider as AuthProvider } from 'contexts/Auth0Context';
+
+// ==============================|| APP ||============================== //
+
+const App = () => (
+    <ThemeCustomization>
+        <RTLLayout><Locales><NavigationScroll><Routes /></NavigationScroll></Locales></RTLLayout>
+        
+        
+        
+    </ThemeCustomization>
+                            
+                            
+);
 
 export default App;
