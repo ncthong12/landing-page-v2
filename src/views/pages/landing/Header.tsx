@@ -15,6 +15,7 @@ import { gridSpacing } from 'store/constant';
 
 // assets
 import dashboard from 'assets/images/landing/dashboard.png';
+import LogoAnimation from './logo-animation';
 import widget1 from 'assets/images/landing/widget-1.png';
 import widget2 from 'assets/images/landing/widget-2.png';
 
@@ -22,16 +23,19 @@ import widget2 from 'assets/images/landing/widget-2.png';
 const HeaderImage = styled('img')(({ theme }) => ({
     maxWidth: '100%',
     borderRadius: '20px',
-    transform: 'scale(1.7)',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    transform: 'scale(1) translateX(100px) rotate(-12deg)',
     transformOrigin: theme.direction === 'rtl' ? '100% 50%' : '0 50%',
+    WebkitBackfaceVisibility: 'hidden',
+    //imageRendering: 'crisp-edges',
     [theme.breakpoints.down('lg')]: {
-        transform: 'scale(1.2)'
-    }
+        transform: 'scale(1.2)',
+    },
 }));
 
 const HeaderAnimationImage = styled('img')({
     maxWidth: '100%',
-    filter: 'drop-shadow(0px 0px 50px rgb(33 150 243 / 30%))'
+    filter: 'drop-shadow(0px 0px 50px rgb(33 150 243 / 30%))',
 });
 
 // ==============================|| LANDING - HEADER PAGE ||============================== //
@@ -49,7 +53,11 @@ const HeaderPage = () => {
                 sx={{ mt: { xs: 10, sm: 6, md: 18.75 }, mb: { xs: 2.5, md: 10 } }}
             >
                 <Grid item xs={12} md={5}>
-                    <Grid container spacing={gridSpacing} sx={{ pr: 10, [theme.breakpoints.down('lg')]: { pr: 0, textAlign: 'center' } }}>
+                    <Grid
+                        container
+                        spacing={gridSpacing}
+                        sx={{ pr: 10, [theme.breakpoints.down('lg')]: { pr: 0, textAlign: 'center' } }}
+                    >
                         <Grid item xs={12}>
                             <motion.div
                                 initial={{ opacity: 0, translateY: 550 }}
@@ -57,7 +65,7 @@ const HeaderPage = () => {
                                 transition={{
                                     type: 'spring',
                                     stiffness: 150,
-                                    damping: 30
+                                    damping: 30,
                                 }}
                             >
                                 <Typography
@@ -65,11 +73,11 @@ const HeaderPage = () => {
                                     sx={{
                                         fontSize: { xs: '2.25rem', sm: '3rem', md: '4rem' },
                                         fontWeight: 900,
-                                        lineHeight: 1.4
+                                        lineHeight: 1.4,
                                     }}
                                 >
                                     Build Your Next Project With
-                                    <Box component="span" sx={{ ml: 2, color: '#4a19d2' }}>
+                                    <Box component="span" sx={{ ml: 2, color: '#4D24DA' }}>
                                         Perry Digital
                                     </Box>
                                 </Typography>
@@ -83,7 +91,7 @@ const HeaderPage = () => {
                                     type: 'spring',
                                     stiffness: 150,
                                     damping: 30,
-                                    delay: 0.2
+                                    delay: 0.2,
                                 }}
                             >
                                 <Typography
@@ -93,10 +101,11 @@ const HeaderPage = () => {
                                     sx={{
                                         fontSize: { xs: '1rem', md: '1.125rem' },
                                         fontWeight: 400,
-                                        lineHeight: 1.4
+                                        lineHeight: 1.4,
                                     }}
                                 >
-                                    Berry is React based admin template which helps you to build faster and beautiful web applications.
+                                    Berry is React based admin template which helps you to build faster and beautiful
+                                    web applications.
                                 </Typography>
                             </motion.div>
                         </Grid>
@@ -108,7 +117,7 @@ const HeaderPage = () => {
                                     type: 'spring',
                                     stiffness: 150,
                                     damping: 30,
-                                    delay: 0.4
+                                    delay: 0.4,
                                 }}
                             >
                                 <Grid container spacing={2} sx={{ justifyContent: { xs: 'center', md: 'flex-start' } }}>
@@ -148,7 +157,7 @@ const HeaderPage = () => {
                                     type: 'spring',
                                     stiffness: 150,
                                     damping: 30,
-                                    delay: 0.6
+                                    delay: 0.6,
                                 }}
                             >
                                 <Grid
@@ -166,7 +175,9 @@ const HeaderPage = () => {
                                                 height: 50,
                                                 padding: 0.5,
                                                 background:
-                                                    theme.palette.mode === 'dark' ? theme.palette.dark.light : theme.palette.primary.light
+                                                    theme.palette.mode === 'dark'
+                                                        ? theme.palette.dark.light
+                                                        : theme.palette.primary.light,
                                             }}
                                             variant="rounded"
                                         >
@@ -197,15 +208,26 @@ const HeaderPage = () => {
                                                 </g>
                                                 <defs>
                                                     <clipPath id="clip0">
-                                                        <rect width="300" height="238.3" fill="white" transform="translate(100 131)" />
+                                                        <rect
+                                                            width="300"
+                                                            height="238.3"
+                                                            fill="white"
+                                                            transform="translate(100 131)"
+                                                        />
                                                     </clipPath>
                                                 </defs>
                                             </svg>
                                         </Avatar>
                                     </Grid>
                                     <Grid item xs zeroMinWidth>
-                                        <Typography variant="h4" component="div" color="inherit" sx={{ fontWeight: 400, lineHeight: 1.4 }}>
-                                            <b>Built with Material-UI &#169;</b> - The most popular React Component Library.
+                                        <Typography
+                                            variant="h4"
+                                            component="div"
+                                            color="inherit"
+                                            sx={{ fontWeight: 400, lineHeight: 1.4 }}
+                                        >
+                                            <b>Built with Material-UI &#169;</b> - The most popular React Component
+                                            Library.
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -214,15 +236,16 @@ const HeaderPage = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' } }}>
-                    <Box sx={{ position: 'relative', mt: 8.75 }}>
-                        <HeaderImage src={dashboard} alt="Berry" />
-                        <Box
+                    <Box sx={{ position: 'relative', mt: 8.75, width: '100%' }}>
+                        <LogoAnimation />
+                        {/* <HeaderImage src={dashboard} alt="Berry" /> */}
+                        {/* <Box
                             sx={{
                                 position: 'absolute',
                                 top: '-110px',
                                 right: theme.direction === 'rtl' ? '170px' : '-170px',
                                 width: '290px',
-                                animation: '10s slideY linear infinite'
+                                animation: '10s slideY linear infinite',
                             }}
                         >
                             <motion.div
@@ -232,7 +255,7 @@ const HeaderPage = () => {
                                     type: 'spring',
                                     stiffness: 150,
                                     damping: 30,
-                                    delay: 0.2
+                                    delay: 0.2,
                                 }}
                             >
                                 <HeaderAnimationImage src={widget1} alt="Berry" />
@@ -245,7 +268,7 @@ const HeaderPage = () => {
                                 left: 300,
                                 width: 280,
                                 animation: '10s slideY linear infinite',
-                                animationDelay: '2s'
+                                animationDelay: '2s',
                             }}
                         >
                             <motion.div
@@ -255,12 +278,12 @@ const HeaderPage = () => {
                                     type: 'spring',
                                     stiffness: 150,
                                     damping: 30,
-                                    delay: 0.4
+                                    delay: 0.4,
                                 }}
                             >
                                 <HeaderAnimationImage src={widget2} alt="Berry" />
                             </motion.div>
-                        </Box>
+                        </Box> */}
                     </Box>
                 </Grid>
             </Grid>

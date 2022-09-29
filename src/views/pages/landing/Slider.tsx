@@ -18,7 +18,7 @@ const LayoutImage = styled('img')({
     left: 0,
     width: '100%',
     height: '100%',
-    animation: '5s wings ease-in-out infinite'
+    animation: '5s wings ease-in-out infinite',
 });
 
 // =============================|| SLIDER ITEMS ||============================= //
@@ -56,7 +56,7 @@ const SliderPage = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     };
 
     const items = [
@@ -64,20 +64,20 @@ const SliderPage = () => {
             bg: imgLayoutGrid,
             image: imgLayout1,
             title: 'Dark Layout',
-            content: 'Modern, sleek and elegant dark color scheme that looks great in a dark variant.'
+            content: 'Modern, sleek and elegant dark color scheme that looks great in a dark variant.',
         },
         {
             bg: imgLayoutGrid,
             image: imgLayout2,
             title: 'RTL',
-            content: 'Fully Support Right-to-left (RTL) design variant.'
+            content: 'Fully Support Right-to-left (RTL) design variant.',
         },
         {
             bg: imgLayoutGrid,
             image: imgLayout3,
             title: 'Multi-language Support',
-            content: 'Support Multi-language. Added 4 pre-filled language.'
-        }
+            content: 'Support Multi-language. Added 4 pre-filled language.',
+        },
     ];
 
     return (

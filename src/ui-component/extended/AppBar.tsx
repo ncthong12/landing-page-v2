@@ -70,11 +70,10 @@ const AppBar = ({ ...others }) => {
 
     return (
         <ElevationScroll {...others}>
-            <MuiAppBar sx={{ backgroundColor: '#4D24DA !important' }}>
+            <MuiAppBar sx={{ backgroundColor: '#6f24da !important' }}>
                 <Container>
                     <Toolbar>
                         <Logo />
-
                         <Typography
                             variant="h6"
                             component="div"
@@ -85,23 +84,62 @@ const AppBar = ({ ...others }) => {
                             Perry Digital
                         </Typography>
                         <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={2} color="white">
-                            <Button color="inherit" component={Link} href="#" target="_blank">
-                                Home
-                            </Button>
-                            <Button color="inherit" component={RouterLink} to="/login" target="_blank">
-                                Dashboard
+                            <Button
+                                color="inherit"
+                                component={Link}
+                                href="#intro"
+                                onClick={(e: any) => {
+                                    let hero = document.getElementById('intro');
+                                    e.preventDefault(); // Stop Page Reloading
+                                    e.stopPropagation();
+                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                            >
+                                Introduction
                             </Button>
                             <Button
                                 color="inherit"
                                 component={Link}
-                                href="https://codedthemes.gitbook.io/berry"
-                                target="_blank"
+                                href="#achievement"
+                                onClick={(e: any) => {
+                                    let hero = document.getElementById('achievement');
+                                    e.preventDefault(); // Stop Page Reloading
+                                    e.stopPropagation();
+                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                }}
                             >
-                                Documentation
+                                Achievement
                             </Button>
                             <Button
+                                color="inherit"
                                 component={Link}
-                                href="/utils/util-animation"
+                                href="#team"
+                                onClick={(e: any) => {
+                                    let hero = document.getElementById('team');
+                                    e.preventDefault(); // Stop Page Reloading
+                                    e.stopPropagation();
+                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                            >
+                                Team
+                            </Button>
+                            <Button
+                                color="inherit"
+                                component={Link}
+                                href="#partners"
+                                onClick={(e: any) => {
+                                    let hero = document.getElementById('partners');
+                                    e.preventDefault(); // Stop Page Reloading
+                                    e.stopPropagation();
+                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                            >
+                                Partners
+                            </Button>
+                            <Button
+                                component={RouterLink}
+                                to="/utils/util-animation"
+                                target="_blank"
                                 disableElevation
                                 variant="contained"
                                 color="error"
@@ -123,32 +161,36 @@ const AppBar = ({ ...others }) => {
                                         onKeyDown={drawerToggler(false)}
                                     >
                                         <List>
-                                            <Link style={{ textDecoration: 'none' }} href="#" target="_blank">
+                                            <Link style={{ textDecoration: 'none' }} href="#intro" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconHome2 />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Home" />
+                                                    <ListItemText primary="Introduction" />
                                                 </ListItemButton>
                                             </Link>
-                                            <Link style={{ textDecoration: 'none' }} href="/login" target="_blank">
+                                            <Link style={{ textDecoration: 'none' }} href="#achievement" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconDashboard />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Dashboard" />
+                                                    <ListItemText primary="Achievement" />
                                                 </ListItemButton>
                                             </Link>
-                                            <Link
-                                                style={{ textDecoration: 'none' }}
-                                                href="https://codedthemes.gitbook.io/berry"
-                                                target="_blank"
-                                            >
+                                            <Link style={{ textDecoration: 'none' }} href="#team" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconBook />
                                                     </ListItemIcon>
-                                                    <ListItemText primary="Documentation" />
+                                                    <ListItemText primary="Team" />
+                                                </ListItemButton>
+                                            </Link>
+                                            <Link style={{ textDecoration: 'none' }} href="#partners" target="_self">
+                                                <ListItemButton component="a">
+                                                    <ListItemIcon>
+                                                        <IconDashboard />
+                                                    </ListItemIcon>
+                                                    <ListItemText primary="Partners" />
                                                 </ListItemButton>
                                             </Link>
                                             <Link

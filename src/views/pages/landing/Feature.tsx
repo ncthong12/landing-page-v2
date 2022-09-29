@@ -26,19 +26,20 @@ const FeaturePage = () => {
                             <Grid container spacing={1}>
                                 <Grid item>
                                     <Typography variant="h5" color="primary">
-                                        Top Features
+                                        OUR SERVICES
                                     </Typography>
                                 </Grid>
                             </Grid>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="h2" component="div">
-                                What Berry brings to you?
+                                We Provide
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="body2">
-                                Berry is a solid dashboard template for your next project, with the following top features.
+                                Berry is a solid dashboard template for your next project, with the following top
+                                features.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -58,7 +59,7 @@ const FeaturePage = () => {
                                                         theme.palette.mode === 'dark'
                                                             ? theme.palette.dark[900]
                                                             : theme.palette.primary.light,
-                                                    color: theme.palette.primary.main
+                                                    color: theme.palette.primary.main,
                                                 }}
                                             >
                                                 <PaletteTwoToneIcon fontSize="large" />
@@ -69,8 +70,8 @@ const FeaturePage = () => {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Warm color palates and minimally designed interfaces make the user experience more
-                                                comfortable.
+                                                Warm color palates and minimally designed interfaces make the user
+                                                experience more comfortable.
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -90,7 +91,7 @@ const FeaturePage = () => {
                                                         theme.palette.mode === 'dark'
                                                             ? theme.palette.dark[900]
                                                             : theme.palette.secondary.light,
-                                                    color: theme.palette.secondary.main
+                                                    color: theme.palette.secondary.main,
                                                 }}
                                             >
                                                 <ReorderTwoToneIcon fontSize="large" />
@@ -101,8 +102,8 @@ const FeaturePage = () => {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Technology behind Berry is less complicated so you can focus on creating the actual web
-                                                applications.
+                                                Technology behind Berry is less complicated so you can focus on creating
+                                                the actual web applications.
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -122,7 +123,7 @@ const FeaturePage = () => {
                                                         theme.palette.mode === 'dark'
                                                             ? theme.palette.dark[900]
                                                             : theme.palette.success.light,
-                                                    color: theme.palette.success.dark
+                                                    color: theme.palette.success.dark,
                                                 }}
                                             >
                                                 <SpeedTwoToneIcon fontSize="large" />
@@ -133,7 +134,8 @@ const FeaturePage = () => {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Code that makes it easier and faster to render the page for your web applications.
+                                                Code that makes it easier and faster to render the page for your web
+                                                applications.
                                             </Typography>
                                         </Grid>
                                     </Grid>

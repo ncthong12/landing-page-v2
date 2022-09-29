@@ -7,7 +7,6 @@ import RTLLayout from 'ui-component/RTLLayout';
 
 // project imports
 
-
 // auth provider
 
 // import { AWSCognitoProvider as AuthProvider } from 'contexts/AWSCognitoContext';
@@ -18,13 +17,14 @@ import RTLLayout from 'ui-component/RTLLayout';
 
 const App = () => (
     <ThemeCustomization>
-        <RTLLayout><Locales><NavigationScroll><Routes /></NavigationScroll></Locales></RTLLayout>
-        
-        
-        
+        <RTLLayout>
+            <Locales>
+                <NavigationScroll>
+                    <Routes />
+                </NavigationScroll>
+            </Locales>
+        </RTLLayout>
     </ThemeCustomization>
-                            
-                            
 );
 
 export default App;

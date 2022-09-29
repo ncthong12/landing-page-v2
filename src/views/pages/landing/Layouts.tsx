@@ -19,8 +19,8 @@ const LayoutImageWrapper = styled(Box)(({ theme }) => ({
     position: 'relative',
     margin: '-70px 0px',
     [theme.breakpoints.down('lg')]: {
-        margin: '-30px 0px'
-    }
+        margin: '-30px 0px',
+    },
 }));
 
 const LayoutImage = styled('img')({
@@ -29,7 +29,7 @@ const LayoutImage = styled('img')({
     left: 0,
     width: '100%',
     height: '100%',
-    animation: '5s wings ease-in-out infinite'
+    animation: '5s wings ease-in-out infinite',
 });
 
 const LayoutContent = styled(Grid)(({ theme }) => ({
@@ -44,7 +44,7 @@ const LayoutContent = styled(Grid)(({ theme }) => ({
         height: 25,
         borderRadius: '50%',
         top: 13,
-        left: -20
+        left: -20,
     },
     '&:before': {
         content: '""',
@@ -53,22 +53,22 @@ const LayoutContent = styled(Grid)(({ theme }) => ({
         width: 1,
         height: 390,
         top: 13,
-        left: -8
+        left: -8,
     },
     [theme.breakpoints.down('md')]: {
         '&:before': {
-            height: 290
-        }
+            height: 290,
+        },
     },
     [theme.breakpoints.down('lg')]: {
         '&:after': {
-            left: -12
+            left: -12,
         },
         '&:before': {
             left: 0,
-            height: 290
-        }
-    }
+            height: 290,
+        },
+    },
 }));
 
 const LayoutRightContent = styled(Grid)(({ theme }) => ({
@@ -86,7 +86,7 @@ const LayoutRightContent = styled(Grid)(({ theme }) => ({
         height: 25,
         borderRadius: '50%',
         top: 13,
-        right: -12
+        right: -12,
     },
     '&:before': {
         content: '""',
@@ -95,32 +95,32 @@ const LayoutRightContent = styled(Grid)(({ theme }) => ({
         width: 1,
         height: 300,
         top: 13,
-        right: -1
+        right: -1,
     },
     [theme.breakpoints.down('md')]: {
         '&:before': {
-            height: '400%'
-        }
+            height: '400%',
+        },
     },
     [theme.breakpoints.down('lg')]: {
         '&:after': {
-            right: -4
+            right: -4,
         },
         '&:before': {
-            right: 7
-        }
+            right: 7,
+        },
     },
     [theme.breakpoints.down('md')]: {
         '&:after': {
             right: 'auto',
-            left: -12
+            left: -12,
         },
         '&:before': {
             right: 'auto',
             left: 0,
-            height: 160
-        }
-    }
+            height: 160,
+        },
+    },
 }));
 
 // =============================|| LANDING - LAYOUTS PAGE ||============================= //
@@ -156,7 +156,8 @@ const LayoutsPage = () => {
                                     </Grid>
                                     <Grid item sm={12}>
                                         <Typography variant="body2">
-                                            Modern, sleek and elegant dark color scheme that looks great in a dark variant.
+                                            Modern, sleek and elegant dark color scheme that looks great in a dark
+                                            variant.
                                         </Typography>
                                     </Grid>
                                 </LayoutContent>
@@ -173,7 +174,9 @@ const LayoutsPage = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item sm={12}>
-                                        <Typography variant="body2">Fully Support Right-to-left (RTL) design variant.</Typography>
+                                        <Typography variant="body2">
+                                            Fully Support Right-to-left (RTL) design variant.
+                                        </Typography>
                                     </Grid>
                                 </LayoutRightContent>
                             </Grid>
@@ -207,8 +210,11 @@ const LayoutsPage = () => {
                                     spacing={2}
                                     sx={{
                                         '&:before': {
-                                            background: theme.palette.mode === 'dark' ? theme.palette.dark[900] : '#fff !important'
-                                        }
+                                            background:
+                                                theme.palette.mode === 'dark'
+                                                    ? theme.palette.dark[900]
+                                                    : '#fff !important',
+                                        },
                                     }}
                                 >
                                     <Grid item sm={12}>
@@ -217,7 +223,9 @@ const LayoutsPage = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item sm={12}>
-                                        <Typography variant="body2">Support Multi-language. Added 4 pre-filled language.</Typography>
+                                        <Typography variant="body2">
+                                            Support Multi-language. Added 4 pre-filled language.
+                                        </Typography>
                                     </Grid>
                                 </LayoutContent>
                             </Grid>

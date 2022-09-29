@@ -17,15 +17,35 @@ const HeaderWrapper = styled('div')(({ theme }) => ({
     overflowX: 'hidden',
     overflowY: 'clip',
     [theme.breakpoints.down('md')]: {
-        paddingTop: 42
-    }
+        paddingTop: 42,
+    },
 }));
 
 const SecondWrapper = styled('div')(({ theme }) => ({
     paddingTop: 160,
     [theme.breakpoints.down('md')]: {
-        paddingTop: 60
-    }
+        paddingTop: 60,
+    },
+}));
+
+const TestWrapper = styled('div')(({ theme }) => ({
+    //overflow: 'hidden',
+    backgroundImage:
+        'linear-gradient(rgba(22, 28, 36, 0.88), rgba(22, 28, 36, 0.88)), url(https://zone-assets-api.vercel.app/assets/bg_gradient.jpg)',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'initial, initial',
+    backgroundOrigin: 'initial, initial',
+    backgroundClip: 'initial, initial',
+    backgroundColor: 'initial',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center',
+    marginTop: 238, // TODO
+    paddingTop: 120,
+    paddingBottom: 80,
+    zIndex: -10000,
+    [theme.breakpoints.down('md')]: {
+        paddingTop: 60,
+    },
 }));
 
 // =============================|| LANDING MAIN ||============================= //
@@ -36,16 +56,16 @@ const Landing = () => (
             <AppBar />
             <Header />
         </HeaderWrapper>
-        <SecondWrapper>
+        <SecondWrapper id="intro">
             <Feature />
         </SecondWrapper>
-        <SecondWrapper>
-            <Demos />
-        </SecondWrapper>
-        <SecondWrapper>
+        <SecondWrapper id="achievement">
             <Layouts />
         </SecondWrapper>
-        <SecondWrapper>
+        <TestWrapper id="team">
+            <Demos />
+        </TestWrapper>
+        <SecondWrapper id="partners">
             <KeyFeature />
         </SecondWrapper>
         <SecondWrapper>
