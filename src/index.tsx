@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-
 // load mock apis
 
 // project imports
@@ -11,19 +10,19 @@ import * as serviceWorker from 'serviceWorker';
 import reportWebVitals from 'reportWebVitals';
 import { ConfigProvider } from 'contexts/ConfigContext';
 
-
 // style + assets
 import 'assets/scss/style.scss';
 
 // ==============================|| REACT DOM RENDER  ||============================== //
 
 ReactDOM.render(
-    <ConfigProvider><BrowserRouter basename={BASE_PATH}>
-    <App />
-</BrowserRouter></ConfigProvider>
-    
-                ,
-    document.getElementById('root')
+    <ConfigProvider>
+        <BrowserRouter basename={BASE_PATH}>
+            <App />
+        </BrowserRouter>
+    </ConfigProvider>,
+
+    document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -4,12 +4,11 @@ import { styled } from '@mui/material/styles';
 // project imports
 import Header from './Header';
 import Feature from './Feature';
-import Demos from './Demos';
+import Team from './Team';
 import Layouts from './Layouts';
 import KeyFeature from './KeyFeature';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
-import Customization from 'layout/Customization';
 import AppBar from 'ui-component/extended/AppBar';
 
 const HeaderWrapper = styled('div')(({ theme }) => ({
@@ -70,7 +69,7 @@ const Landing = () => (
             <Layouts />
         </AchieWrapper>
         <TeamWrapper id="team">
-            <Demos />
+            <Team />
         </TeamWrapper>
         <SecondWrapper id="partners">
             <KeyFeature />
@@ -79,7 +78,6 @@ const Landing = () => (
             <Subscribe />
         </SecondWrapper>
         <Footer />
-        <Customization />
     </>
 );
 

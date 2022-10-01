@@ -9,7 +9,6 @@ import {
     Button,
     Container,
     Drawer,
-    Grid,
     IconButton,
     Link,
     List,
@@ -23,11 +22,10 @@ import {
 } from '@mui/material';
 
 // project imports
-//import logo from 'assets/images/logo.svg';
 import Logo from 'ui-component/Logo';
 
 // assets
-import { IconBook, IconCreditCard, IconDashboard, IconHome2 } from '@tabler/icons';
+import { IconUsers, IconInfoCircle, IconHeartHandshake, IconTrophy, IconApps } from '@tabler/icons';
 import MenuIcon from '@mui/icons-material/Menu';
 
 // elevation scroll
@@ -55,10 +53,17 @@ function ElevationScroll({ children, window }: ElevationScrollProps) {
     });
 }
 
-//4a19d2
+function HandleClick(e: Event, id: string) {
+    let hero = document.getElementById(id);
+    e.preventDefault(); // Stop Page Reloading
+    e.stopPropagation();
+    hero && hero.scrollIntoView({ behavior: 'smooth' });
+}
+
 // ==============================|| MINIMAL LAYOUT APP BAR ||============================== //
 
 const AppBar = ({ ...others }) => {
+    const theme = useTheme();
     const [drawerToggle, setDrawerToggle] = React.useState<boolean>(false);
     /** Method called on multiple components with different event types */
     const drawerToggler = (open: boolean) => (event: any) => {
@@ -70,7 +75,7 @@ const AppBar = ({ ...others }) => {
 
     return (
         <ElevationScroll {...others}>
-            <MuiAppBar sx={{ backgroundColor: '#6f24da !important' }}>
+            <MuiAppBar>
                 <Container>
                     <Toolbar>
                         <Logo />
@@ -79,20 +84,17 @@ const AppBar = ({ ...others }) => {
                             component="div"
                             sx={{ flexGrow: 1, ml: 1 }}
                             fontSize="large"
-                            color="white"
+                            color={theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.grey[900]}
                         >
                             Perry Digital
                         </Typography>
-                        <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={2} color="white">
+                        <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={2}>
                             <Button
                                 color="inherit"
                                 component={Link}
                                 href="#intro"
                                 onClick={(e: any) => {
-                                    let hero = document.getElementById('intro');
-                                    e.preventDefault(); // Stop Page Reloading
-                                    e.stopPropagation();
-                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                    HandleClick(e, 'intro');
                                 }}
                             >
                                 Introduction
@@ -102,10 +104,7 @@ const AppBar = ({ ...others }) => {
                                 component={Link}
                                 href="#achievement"
                                 onClick={(e: any) => {
-                                    let hero = document.getElementById('achievement');
-                                    e.preventDefault(); // Stop Page Reloading
-                                    e.stopPropagation();
-                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                    HandleClick(e, 'achievement');
                                 }}
                             >
                                 Achievement
@@ -115,10 +114,7 @@ const AppBar = ({ ...others }) => {
                                 component={Link}
                                 href="#team"
                                 onClick={(e: any) => {
-                                    let hero = document.getElementById('team');
-                                    e.preventDefault(); // Stop Page Reloading
-                                    e.stopPropagation();
-                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                    HandleClick(e, 'team');
                                 }}
                             >
                                 Team
@@ -128,10 +124,7 @@ const AppBar = ({ ...others }) => {
                                 component={Link}
                                 href="#partners"
                                 onClick={(e: any) => {
-                                    let hero = document.getElementById('partners');
-                                    e.preventDefault(); // Stop Page Reloading
-                                    e.stopPropagation();
-                                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                                    HandleClick(e, 'partners');
                                 }}
                             >
                                 Partners
@@ -164,7 +157,7 @@ const AppBar = ({ ...others }) => {
                                             <Link style={{ textDecoration: 'none' }} href="#intro" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconHome2 />
+                                                        <IconInfoCircle />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Introduction" />
                                                 </ListItemButton>
@@ -172,7 +165,7 @@ const AppBar = ({ ...others }) => {
                                             <Link style={{ textDecoration: 'none' }} href="#achievement" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconDashboard />
+                                                        <IconTrophy />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Achievement" />
                                                 </ListItemButton>
@@ -180,7 +173,7 @@ const AppBar = ({ ...others }) => {
                                             <Link style={{ textDecoration: 'none' }} href="#team" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconBook />
+                                                        <IconUsers />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Team" />
                                                 </ListItemButton>
@@ -188,7 +181,7 @@ const AppBar = ({ ...others }) => {
                                             <Link style={{ textDecoration: 'none' }} href="#partners" target="_self">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconDashboard />
+                                                        <IconHeartHandshake />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Partners" />
                                                 </ListItemButton>
@@ -200,7 +193,7 @@ const AppBar = ({ ...others }) => {
                                             >
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
-                                                        <IconCreditCard />
+                                                        <IconApps />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Dapp" />
                                                 </ListItemButton>

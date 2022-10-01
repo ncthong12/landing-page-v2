@@ -18,8 +18,8 @@ const FooterWrapper = styled('div')(({ theme }) => ({
     color: '#fff',
     background: theme.palette.secondary.main,
     [theme.breakpoints.down('md')]: {
-        textAlign: 'center'
-    }
+        textAlign: 'center',
+    },
 }));
 
 const FooterLink = styled(Link)({
@@ -30,11 +30,11 @@ const FooterLink = styled(Link)({
     opacity: '0.8',
     '& svg': {
         fontsize: '1.125rem',
-        marginRight: 8
+        marginRight: 8,
     },
     '&:hover': {
-        opacity: '1'
-    }
+        opacity: '1',
+    },
 });
 
 const FooterSubWrapper = styled('div')(({ theme }) => ({
@@ -42,8 +42,8 @@ const FooterSubWrapper = styled('div')(({ theme }) => ({
     color: '#fff',
     background: theme.palette.secondary.dark,
     [theme.breakpoints.down('md')]: {
-        textAlign: 'center'
-    }
+        textAlign: 'center',
+    },
 }));
 
 // ==============================|| LANDING - FOOTER PAGE ||============================== //
@@ -63,22 +63,37 @@ const FooterPage = () => {
                                 container
                                 alignItems="center"
                                 spacing={2}
-                                sx={{ justifyContent: 'flex-end', [theme.breakpoints.down('md')]: { justifyContent: 'center' } }}
+                                sx={{
+                                    justifyContent: 'flex-end',
+                                    [theme.breakpoints.down('md')]: { justifyContent: 'center' },
+                                }}
                             >
                                 <Grid item>
-                                    <FooterLink href="https://blog.berrydashboard.io/" target="_blank" underline="hover">
+                                    <FooterLink
+                                        href="https://blog.berrydashboard.io/"
+                                        target="_blank"
+                                        underline="hover"
+                                    >
                                         <InstagramIcon />
                                         Blog
                                     </FooterLink>
                                 </Grid>
                                 <Grid item>
-                                    <FooterLink href="https://www.facebook.com/codedthemes" target="_blank" underline="hover">
+                                    <FooterLink
+                                        href="https://www.facebook.com/codedthemes"
+                                        target="_blank"
+                                        underline="hover"
+                                    >
                                         <FacebookIcon />
                                         Facebook
                                     </FooterLink>
                                 </Grid>
                                 <Grid item>
-                                    <FooterLink href="https://twitter.com/codedthemes" target="_blank" underline="hover">
+                                    <FooterLink
+                                        href="https://twitter.com/codedthemes"
+                                        target="_blank"
+                                        underline="hover"
+                                    >
                                         <TwitterIcon />
                                         Twitter
                                     </FooterLink>
@@ -91,7 +106,7 @@ const FooterPage = () => {
             <FooterSubWrapper>
                 <Container>
                     <Typography variant="subtitle2" component="div" color="inherit">
-                        &#169; CodedThemes
+                        &#169; PerryProject
                     </Typography>
                 </Container>
             </FooterSubWrapper>

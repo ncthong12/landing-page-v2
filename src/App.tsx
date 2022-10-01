@@ -2,7 +2,6 @@
 import Routes from 'routes';
 import ThemeCustomization from 'themes';
 import NavigationScroll from 'layout/NavigationScroll';
-import Locales from 'ui-component/Locales';
 import RTLLayout from 'ui-component/RTLLayout';
 
 // project imports
@@ -18,11 +17,9 @@ import RTLLayout from 'ui-component/RTLLayout';
 const App = () => (
     <ThemeCustomization>
         <RTLLayout>
-            <Locales>
-                <NavigationScroll>
-                    <Routes />
-                </NavigationScroll>
-            </Locales>
+            <NavigationScroll>
+                <Routes />
+            </NavigationScroll>
         </RTLLayout>
     </ThemeCustomization>
 );

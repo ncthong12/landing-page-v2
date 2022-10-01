@@ -14,12 +14,10 @@ import AnimateButton from 'ui-component/extended/AnimateButton';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import dashboard from 'assets/images/landing/dashboard.png';
 import LogoAnimation from './logo-animation';
-import widget1 from 'assets/images/landing/widget-1.png';
-import widget2 from 'assets/images/landing/widget-2.png';
 
 // styles
+// eslint-disable-next-line
 const HeaderImage = styled('img')(({ theme }) => ({
     maxWidth: '100%',
     borderRadius: '20px',
@@ -32,11 +30,6 @@ const HeaderImage = styled('img')(({ theme }) => ({
         transform: 'scale(1.2)',
     },
 }));
-
-const HeaderAnimationImage = styled('img')({
-    maxWidth: '100%',
-    filter: 'drop-shadow(0px 0px 50px rgb(33 150 243 / 30%))',
-});
 
 // ==============================|| LANDING - HEADER PAGE ||============================== //
 
@@ -77,7 +70,7 @@ const HeaderPage = () => {
                                     }}
                                 >
                                     Build Your Next Project With
-                                    <Box component="span" sx={{ ml: 2, color: '#4D24DA' }}>
+                                    <Box component="span" sx={{ ml: 2, color: theme.palette.primary.main }}>
                                         Perry Digital
                                     </Box>
                                 </Typography>
@@ -236,54 +229,8 @@ const HeaderPage = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' } }}>
-                    <Box sx={{ position: 'relative', mt: 8.75, width: '100%' }}>
+                    <Box sx={{ position: 'relative', width: '100%', left: '80px' }}>
                         <LogoAnimation />
-                        {/* <HeaderImage src={dashboard} alt="Berry" /> */}
-                        {/* <Box
-                            sx={{
-                                position: 'absolute',
-                                top: '-110px',
-                                right: theme.direction === 'rtl' ? '170px' : '-170px',
-                                width: '290px',
-                                animation: '10s slideY linear infinite',
-                            }}
-                        >
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    type: 'spring',
-                                    stiffness: 150,
-                                    damping: 30,
-                                    delay: 0.2,
-                                }}
-                            >
-                                <HeaderAnimationImage src={widget1} alt="Berry" />
-                            </motion.div>
-                        </Box>
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                bottom: -90,
-                                left: 300,
-                                width: 280,
-                                animation: '10s slideY linear infinite',
-                                animationDelay: '2s',
-                            }}
-                        >
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    type: 'spring',
-                                    stiffness: 150,
-                                    damping: 30,
-                                    delay: 0.4,
-                                }}
-                            >
-                                <HeaderAnimationImage src={widget2} alt="Berry" />
-                            </motion.div>
-                        </Box> */}
                     </Box>
                 </Grid>
             </Grid>
