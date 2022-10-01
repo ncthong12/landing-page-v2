@@ -28,7 +28,14 @@ const SecondWrapper = styled('div')(({ theme }) => ({
     },
 }));
 
-const TestWrapper = styled('div')(({ theme }) => ({
+const AchieWrapper = styled('div')(({ theme }) => ({
+    paddingTop: 200,
+    [theme.breakpoints.down('md')]: {
+        paddingTop: 100,
+    },
+}));
+
+const TeamWrapper = styled('div')(({ theme }) => ({
     //overflow: 'hidden',
     backgroundImage:
         'linear-gradient(rgba(22, 28, 36, 0.88), rgba(22, 28, 36, 0.88)), url(https://zone-assets-api.vercel.app/assets/bg_gradient.jpg)',
@@ -40,8 +47,8 @@ const TestWrapper = styled('div')(({ theme }) => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
     marginTop: 238, // TODO
-    paddingTop: 120,
-    paddingBottom: 80,
+    paddingTop: 140,
+    paddingBottom: 100,
     zIndex: -10000,
     [theme.breakpoints.down('md')]: {
         paddingTop: 60,
@@ -59,12 +66,12 @@ const Landing = () => (
         <SecondWrapper id="intro">
             <Feature />
         </SecondWrapper>
-        <SecondWrapper id="achievement">
+        <AchieWrapper id="achievement">
             <Layouts />
-        </SecondWrapper>
-        <TestWrapper id="team">
+        </AchieWrapper>
+        <TeamWrapper id="team">
             <Demos />
-        </TestWrapper>
+        </TeamWrapper>
         <SecondWrapper id="partners">
             <KeyFeature />
         </SecondWrapper>

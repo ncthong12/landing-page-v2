@@ -26,7 +26,7 @@ const KeyFeaturePage = () => {
         ...theme.typography.commonAvatar,
         cursor: 'initial',
         width: 72,
-        height: 72
+        height: 72,
     };
 
     return (
@@ -50,7 +50,8 @@ const KeyFeaturePage = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="body2">
-                                If you&apos;re in need of a web app that is both user-friendly and scalable, this is the template for you.
+                                If you&apos;re in need of a web app that is both user-friendly and scalable, this is the
+                                template for you.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -66,8 +67,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[800]
+                                                            : 'primary.light',
+                                                    color: theme.palette.primary.main,
                                                 }}
                                             >
                                                 <FolderTwoToneIcon />
@@ -89,8 +93,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[900]
+                                                            : 'secondary.light',
+                                                    color: theme.palette.secondary.main,
                                                 }}
                                             >
                                                 <CodeTwoToneIcon />
@@ -112,8 +119,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[800]
+                                                            : 'primary.light',
+                                                    color: theme.palette.primary.main,
                                                 }}
                                             >
                                                 <EmojiEmotionsTwoToneIcon />
@@ -135,8 +145,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[900]
+                                                            : 'secondary.light',
+                                                    color: theme.palette.secondary.main,
                                                 }}
                                             >
                                                 <LockOpenTwoToneIcon />
@@ -158,8 +171,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[900]
+                                                            : 'secondary.light',
+                                                    color: theme.palette.secondary.main,
                                                 }}
                                             >
                                                 <AttachmentTwoToneIcon />
@@ -181,8 +197,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[800]
+                                                            : 'primary.light',
+                                                    color: theme.palette.primary.main,
                                                 }}
                                             >
                                                 <CallSplitTwoToneIcon />
@@ -204,8 +223,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
+                                                    bgcolor:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[900]
+                                                            : 'secondary.light',
+                                                    color: theme.palette.secondary.main,
                                                 }}
                                             >
                                                 <TextFieldsIcon />
@@ -227,8 +249,11 @@ const KeyFeaturePage = () => {
                                                 variant="rounded"
                                                 sx={{
                                                     ...avatarIconSx,
-                                                    background: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
+                                                    background:
+                                                        theme.palette.mode === 'dark'
+                                                            ? theme.palette.dark[800]
+                                                            : 'primary.light',
+                                                    color: theme.palette.primary.main,
                                                 }}
                                             >
                                                 <DesignServicesIcon />
@@ -258,7 +283,12 @@ const KeyFeaturePage = () => {
                             </AnimateButton>
                         </Grid>
                         <Grid item>
-                            <Button component={Link} href="https://blog.berrydashboard.io" target="_blank" variant="text">
+                            <Button
+                                component={Link}
+                                href="https://blog.berrydashboard.io"
+                                target="_blank"
+                                variant="text"
+                            >
                                 Know More
                             </Button>
                         </Grid>

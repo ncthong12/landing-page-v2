@@ -1,6 +1,6 @@
 // material-ui
-import { useTheme } from '@mui/material/styles';
-import { Container, Grid, Typography } from '@mui/material';
+import { useTheme, styled } from '@mui/material/styles';
+import { Container, Grid, Typography, Box } from '@mui/material';
 
 // project imports
 import FadeInWhenVisible from './Animation';
@@ -13,13 +13,27 @@ import PaletteTwoToneIcon from '@mui/icons-material/PaletteTwoTone';
 import ReorderTwoToneIcon from '@mui/icons-material/ReorderTwoTone';
 import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
 
+import marketing from 'assets/images/landing/marketing_langding_about.jpg';
+
 // =============================|| LANDING - FEATURE PAGE ||============================= //
+const FeatureImage = styled('img')(({ theme }) => ({
+    maxWidth: '100%',
+    borderRadius: '12px',
+    transformOrigin: theme.direction === 'rtl' ? '100% 50%' : '0 50%',
+    WebkitBackfaceVisibility: 'hidden',
+    //imageRendering: 'crisp-edges',
+}));
 
 const FeaturePage = () => {
     const theme = useTheme();
     return (
         <Container>
             <Grid container spacing={gridSpacing}>
+                <Grid item xs={12} justifyContent="center">
+                    <Box sx={{ position: 'relative', mb: '80px', width: '100%', display: 'block' }}>
+                        <FeatureImage src={marketing} alt="marketing" />
+                    </Box>
+                </Grid>
                 <Grid item xs={12} lg={5} md={10}>
                     <Grid container spacing={2} sx={{ mb: 2 }}>
                         <Grid item xs={12}>
