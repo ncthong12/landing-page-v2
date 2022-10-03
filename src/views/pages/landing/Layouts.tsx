@@ -32,6 +32,15 @@ const LayoutImage = styled('img')({
     animation: '5s wings ease-in-out infinite',
 });
 
+const LayoutImage3 = styled('img')({
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    animation: '5s wings ease-in-out infinite',
+});
+
 const LayoutContent = styled(Grid)(({ theme }) => ({
     maxWidth: 400,
     position: 'relative',
@@ -196,12 +205,12 @@ const LayoutsPage = () => {
                         <Grid container alignItems="center" spacing={gridSpacing}>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    {/* <img
+                                    <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    /> */}
-                                    <LayoutImage src={imgLayout3} alt="Berry" style={{ animationDelay: '3s' }} />
+                                    />
+                                    <LayoutImage3 src={imgLayout3} alt="Berry" style={{ animationDelay: '3s' }} />
                                 </LayoutImageWrapper>
                             </Grid>
                             <Grid item sm={6}>
