@@ -55,8 +55,22 @@ const FooterPage = () => {
             <FooterWrapper>
                 <Container>
                     <Grid container alignItems="center" spacing={gridSpacing}>
-                        <Grid item xs={12} sm={4}>
-                            <img src={logoDark} alt="Berry" width="100" />
+                        <Grid item xs={12} sm={4} display="flex">
+                            <img src={logoDark} alt="Berry" />
+                            <Typography
+                                variant="h6"
+                                component="div"
+                                sx={{ flexGrow: 1, ml: 1 }}
+                                fontSize="x-large"
+                                fontFamily="Acme, sans-serif"
+                                color={
+                                    theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.grey[900]
+                                }
+                                alignItems="center"
+                                display="flex"
+                            >
+                                Perry Digital
+                            </Typography>
                         </Grid>
                         <Grid item xs={12} sm={8}>
                             <Grid

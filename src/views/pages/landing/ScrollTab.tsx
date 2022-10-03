@@ -2,8 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import user1 from 'assets/images/profile/phuc-profile.jpg';
-import user2 from 'assets/images/profile/thong-profile2.jpg';
-import user3 from 'assets/images/profile/khang-profile.jpg';
+import user2 from 'assets/images/profile/thong-profile2.png';
+import user3 from 'assets/images/profile/khang-profile.png';
 import user4 from 'assets/images/profile/269090092_2909308966047632_3270239021612346658_n.jpg';
 import MemberItem from './MemberItem';
 

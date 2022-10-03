@@ -7,8 +7,8 @@ import Slider from './Slider';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import imgLayout1 from 'assets/images/landing/demo-dark.png';
-import imgLayout2 from 'assets/images/landing/demo-rtl.png';
+import imgLayout1 from 'assets/images/landing/game2D.png';
+import imgLayout2 from 'assets/images/landing/web-plan.png';
 import imgLayout3 from 'assets/images/landing/demo-multi.png';
 import imgLayoutGrid from 'assets/images/landing/img-lay-grid.png';
 import imgLayoutDarkGrid from 'assets/images/landing/img-bg-grid-dark.svg';
@@ -24,11 +24,11 @@ const LayoutImageWrapper = styled(Box)(({ theme }) => ({
 }));
 
 const LayoutImage = styled('img')({
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
+    // position: 'absolute',
+    // top: 0,
+    // left: 0,
+    // width: '100%',
+    // height: '100%',
     animation: '5s wings ease-in-out infinite',
 });
 
@@ -139,11 +139,11 @@ const LayoutsPage = () => {
                         <Grid container alignItems="center" spacing={gridSpacing}>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    <img
+                                    {/* <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    />
+                                    /> */}
                                     <LayoutImage src={imgLayout1} alt="Berry" />
                                 </LayoutImageWrapper>
                             </Grid>
@@ -182,11 +182,11 @@ const LayoutsPage = () => {
                             </Grid>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    <img
+                                    {/* <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    />
+                                    /> */}
                                     <LayoutImage src={imgLayout2} alt="Berry" style={{ animationDelay: '1.5s' }} />
                                 </LayoutImageWrapper>
                             </Grid>
@@ -196,11 +196,11 @@ const LayoutsPage = () => {
                         <Grid container alignItems="center" spacing={gridSpacing}>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    <img
+                                    {/* <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    />
+                                    /> */}
                                     <LayoutImage src={imgLayout3} alt="Berry" style={{ animationDelay: '3s' }} />
                                 </LayoutImageWrapper>
                             </Grid>

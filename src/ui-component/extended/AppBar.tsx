@@ -83,7 +83,8 @@ const AppBar = ({ ...others }) => {
                             variant="h6"
                             component="div"
                             sx={{ flexGrow: 1, ml: 1 }}
-                            fontSize="large"
+                            fontSize="x-large"
+                            fontFamily="Acme, sans-serif"
                             color={theme.palette.mode === 'dark' ? theme.palette.common.white : theme.palette.grey[900]}
                         >
                             Perry Digital

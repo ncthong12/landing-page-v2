@@ -9,9 +9,9 @@ import Avatar from 'ui-component/extended/Avatar';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import PaletteTwoToneIcon from '@mui/icons-material/PaletteTwoTone';
-import ReorderTwoToneIcon from '@mui/icons-material/ReorderTwoTone';
-import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
+import SportsEsportsTwoToneIcon from '@mui/icons-material/SportsEsportsTwoTone';
+import AppsTwoToneIcon from '@mui/icons-material/AppsTwoTone';
+import WebTwoToneIcon from '@mui/icons-material/WebTwoTone';
 
 import marketing from 'assets/images/landing/marketing_langding_about.jpg';
 
@@ -30,9 +30,11 @@ const FeaturePage = () => {
         <Container>
             <Grid container spacing={gridSpacing}>
                 <Grid item xs={12} justifyContent="center">
-                    <Box sx={{ position: 'relative', mb: '80px', width: '100%', display: 'block' }}>
-                        <FeatureImage src={marketing} alt="marketing" />
-                    </Box>
+                    <FadeInWhenVisible>
+                        <Box sx={{ position: 'relative', mb: '80px', width: '100%', display: 'block' }}>
+                            <FeatureImage src={marketing} alt="marketing" />
+                        </Box>
+                    </FadeInWhenVisible>
                 </Grid>
                 <Grid item xs={12} lg={5} md={10}>
                     <Grid container spacing={2} sx={{ mb: 2 }}>
@@ -76,7 +78,7 @@ const FeaturePage = () => {
                                                     color: theme.palette.primary.main,
                                                 }}
                                             >
-                                                <PaletteTwoToneIcon fontSize="large" />
+                                                <SportsEsportsTwoToneIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
@@ -108,7 +110,7 @@ const FeaturePage = () => {
                                                     color: theme.palette.secondary.main,
                                                 }}
                                             >
-                                                <ReorderTwoToneIcon fontSize="large" />
+                                                <AppsTwoToneIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
@@ -140,7 +142,7 @@ const FeaturePage = () => {
                                                     color: theme.palette.success.dark,
                                                 }}
                                             >
-                                                <SpeedTwoToneIcon fontSize="large" />
+                                                <WebTwoToneIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>

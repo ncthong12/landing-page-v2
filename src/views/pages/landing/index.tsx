@@ -10,6 +10,7 @@ import KeyFeature from './KeyFeature';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
 import AppBar from 'ui-component/extended/AppBar';
+import Background from 'assets/images/landing/bg_gradient.jpg';
 
 const HeaderWrapper = styled('div')(({ theme }) => ({
     paddingTop: 30,
@@ -35,14 +36,8 @@ const AchieWrapper = styled('div')(({ theme }) => ({
 }));
 
 const TeamWrapper = styled('div')(({ theme }) => ({
-    //overflow: 'hidden',
-    backgroundImage:
-        'linear-gradient(rgba(22, 28, 36, 0.88), rgba(22, 28, 36, 0.88)), url(https://zone-assets-api.vercel.app/assets/bg_gradient.jpg)',
+    backgroundImage: `linear-gradient(rgba(22, 28, 36, 0.88), rgba(22, 28, 36, 0.88)), url(${Background})`,
     backgroundSize: 'cover',
-    backgroundAttachment: 'initial, initial',
-    backgroundOrigin: 'initial, initial',
-    backgroundClip: 'initial, initial',
-    backgroundColor: 'initial',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
     marginTop: 238, // TODO
