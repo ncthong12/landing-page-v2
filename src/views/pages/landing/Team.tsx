@@ -28,8 +28,8 @@ const TeamPage = () => (
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="body2" fontSize="16px">
-                            Young and passionate freelance software developers who skillful at making games, Dapps, web
-                            applications using blockchain, smart contract and dynamic website technologies.
+                            Young and passionate freelance software developers who are skillful at making games, Dapps,
+                            web applications using blockchain, smart contracts and dynamic website technologies.
                         </Typography>
                     </Grid>
                 </Grid>

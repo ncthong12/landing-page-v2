@@ -112,6 +112,16 @@ const FooterPage = () => {
                                         Twitter
                                     </FooterLink>
                                 </Grid>
+                                <Grid item xs={12}>
+                                    <FooterLink
+                                        href="https://twitter.com/codedthemes"
+                                        target="_blank"
+                                        underline="hover"
+                                    >
+                                        <TwitterIcon />
+                                        Twitter
+                                    </FooterLink>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>

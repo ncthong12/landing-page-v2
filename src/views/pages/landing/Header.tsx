@@ -97,8 +97,8 @@ const HeaderPage = () => {
                                         lineHeight: 1.4,
                                     }}
                                 >
-                                    Perry Digital focus on develop faster and beautiful web applications (or SPA) using
-                                    React based template with TypeScript and Material-UI.
+                                    Perry Digital focuses on developing faster and beautiful web applications (SPA)
+                                    using React based template with TypeScript and Material-UI.
                                 </Typography>
                             </motion.div>
                         </Grid>

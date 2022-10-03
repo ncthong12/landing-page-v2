@@ -54,8 +54,7 @@ const FeaturePage = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="body2">
-                                Berry is a solid dashboard template for your next project, with the following top
-                                features.
+                                Perry Digital team currently working on the following fields.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -82,13 +81,10 @@ const FeaturePage = () => {
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Beautiful User Interface</Typography>
+                                            <Typography variant="h3">Gaming</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="body2">
-                                                Warm color palates and minimally designed interfaces make the user
-                                                experience more comfortable.
-                                            </Typography>
+                                            <Typography variant="body2"></Typography>
                                         </Grid>
                                     </Grid>
                                 </SubCard>
@@ -114,13 +110,10 @@ const FeaturePage = () => {
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Modern Technology Stack</Typography>
+                                            <Typography variant="h3">Dapp</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="body2">
-                                                Technology behind Berry is less complicated so you can focus on creating
-                                                the actual web applications.
-                                            </Typography>
+                                            <Typography variant="body2"></Typography>
                                         </Grid>
                                     </Grid>
                                 </SubCard>
@@ -146,12 +139,12 @@ const FeaturePage = () => {
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Performance Centric</Typography>
+                                            <Typography variant="h3">Web Application</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Code that makes it easier and faster to render the page for your web
-                                                applications.
+                                                Beautiful User Interface, Modern Technology Stack and Performance
+                                                Centric are the top features that we cover.
                                             </Typography>
                                         </Grid>
                                     </Grid>
