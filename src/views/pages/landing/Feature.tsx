@@ -84,7 +84,7 @@ const FeaturePage = () => {
                                             <Typography variant="h3">Gaming</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="body2"></Typography>
+                                            <Typography variant="body2">Coming soon.</Typography>
                                         </Grid>
                                     </Grid>
                                 </SubCard>
@@ -113,7 +113,10 @@ const FeaturePage = () => {
                                             <Typography variant="h3">Dapp</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="body2"></Typography>
+                                            <Typography variant="body2">
+                                                Accessible and flexible decentralized web application that integrates
+                                                blockchain.
+                                            </Typography>
                                         </Grid>
                                     </Grid>
                                 </SubCard>

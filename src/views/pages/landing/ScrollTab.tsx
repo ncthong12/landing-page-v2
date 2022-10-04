@@ -55,7 +55,7 @@ export default function ScrollableTabsButtonVisible() {
                 <MemberItem url={user1} name="Nguyen Pham Dinh Phuc" position="Backend Developer" />
                 <MemberItem url={user2} name="Nguyen Cao Thong" position="Frontend Developer" />
                 <MemberItem url={user3} name="Nguyen Bach Phuc Khang" position="Devops Engineer" />
-                <MemberItem url={user4} name="" position="" />
+                <MemberItem url={user4} name="..." position="Placeholder" />
             </Tabs>
         </Box>
     );

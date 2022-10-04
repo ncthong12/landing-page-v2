@@ -9,6 +9,7 @@ import { gridSpacing } from 'store/constant';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { IconMail, IconMapPin } from '@tabler/icons';
 
 import logoDark from 'assets/images/logo-white.svg';
 
@@ -83,11 +84,7 @@ const FooterPage = () => {
                                 }}
                             >
                                 <Grid item>
-                                    <FooterLink
-                                        href="https://blog.berrydashboard.io/"
-                                        target="_blank"
-                                        underline="hover"
-                                    >
+                                    <FooterLink href="#" target="_self" underline="hover">
                                         <InstagramIcon />
                                         Blog
                                     </FooterLink>
@@ -112,15 +109,27 @@ const FooterPage = () => {
                                         Twitter
                                     </FooterLink>
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <FooterLink
-                                        href="https://twitter.com/codedthemes"
-                                        target="_blank"
-                                        underline="hover"
-                                    >
-                                        <TwitterIcon />
-                                        Twitter
-                                    </FooterLink>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    textAlign="end"
+                                    display="flex"
+                                    justifyContent="right"
+                                    alignItems="center"
+                                >
+                                    <IconMail />
+                                    <Typography>mail</Typography>
+                                </Grid>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    textAlign="end"
+                                    display="flex"
+                                    justifyContent="right"
+                                    alignItems="center"
+                                >
+                                    <IconMapPin />
+                                    <Typography>Ninh Kieu, Can Tho, Viet Nam</Typography>
                                 </Grid>
                             </Grid>
                         </Grid>

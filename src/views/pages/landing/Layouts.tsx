@@ -148,26 +148,23 @@ const LayoutsPage = () => {
                         <Grid container alignItems="center" spacing={gridSpacing}>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    {/* <img
+                                    <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    /> */}
-                                    <LayoutImage src={imgLayout1} alt="Berry" />
+                                    />
+                                    {/* <LayoutImage src={imgLayout1} alt="Berry" /> */}
                                 </LayoutImageWrapper>
                             </Grid>
                             <Grid item sm={6}>
                                 <LayoutContent container spacing={2}>
                                     <Grid item sm={12}>
                                         <Typography variant="h4" component="div">
-                                            Dark Layout
+                                            Unity 2D Game Project
                                         </Typography>
                                     </Grid>
                                     <Grid item sm={12}>
-                                        <Typography variant="body2">
-                                            Modern, sleek and elegant dark color scheme that looks great in a dark
-                                            variant.
-                                        </Typography>
+                                        <Typography variant="body2">In progress. Coming soon.</Typography>
                                     </Grid>
                                 </LayoutContent>
                             </Grid>
@@ -179,24 +176,22 @@ const LayoutsPage = () => {
                                 <LayoutRightContent container spacing={2}>
                                     <Grid item sm={12}>
                                         <Typography variant="h4" component="div">
-                                            RTL
+                                            Dapp Project
                                         </Typography>
                                     </Grid>
                                     <Grid item sm={12}>
-                                        <Typography variant="body2">
-                                            Fully Support Right-to-left (RTL) design variant.
-                                        </Typography>
+                                        <Typography variant="body2">In progress. Coming soon.</Typography>
                                     </Grid>
                                 </LayoutRightContent>
                             </Grid>
                             <Grid item sm={6}>
                                 <LayoutImageWrapper>
-                                    {/* <img
+                                    <img
                                         src={theme.palette.mode === 'dark' ? imgLayoutDarkGrid : imgLayoutGrid}
                                         alt="Berry"
                                         style={{ width: '100%' }}
-                                    /> */}
-                                    <LayoutImage src={imgLayout2} alt="Berry" style={{ animationDelay: '1.5s' }} />
+                                    />
+                                    {/* <LayoutImage src={imgLayout2} alt="Berry" style={{ animationDelay: '1.5s' }} /> */}
                                 </LayoutImageWrapper>
                             </Grid>
                         </Grid>
@@ -228,13 +223,11 @@ const LayoutsPage = () => {
                                 >
                                     <Grid item sm={12}>
                                         <Typography variant="h4" component="div">
-                                            Multi-language Support
+                                            Perry Landing Page Project
                                         </Typography>
                                     </Grid>
                                     <Grid item sm={12}>
-                                        <Typography variant="body2">
-                                            Support Multi-language. Added 4 pre-filled language.
-                                        </Typography>
+                                        <Typography variant="body2">Built with dedicated.</Typography>
                                     </Grid>
                                 </LayoutContent>
                             </Grid>

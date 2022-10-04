@@ -34,8 +34,8 @@ const SubscribeWrapper = styled('div')(({ theme }) => {
 
         [theme.breakpoints.down('lg')]: {
             padding: '50px 0',
-            background: theme.direction === 'rtl' ? darkColorRTL0 : darkColor0
-        }
+            background: theme.direction === 'rtl' ? darkColorRTL0 : darkColor0,
+        },
     };
 });
 
@@ -45,14 +45,14 @@ const SubscribeCard = styled('div')(({ theme }) => ({
     borderRadius: '20px',
     padding: '100px 75px',
     [theme.breakpoints.down('md')]: {
-        padding: '40px 25px'
-    }
+        padding: '40px 25px',
+    },
 }));
 
 const SubscribeImage = styled('img')({
     width: 330,
     animation: '5s wings ease-in-out infinite',
-    maxWidth: '100%'
+    maxWidth: '100%',
 });
 
 // ============================|| LANDING - SUBSCRIBE PAGE ||============================ //
@@ -71,7 +71,7 @@ const Subscribe = () => {
                         sx={{
                             display: { xs: 'none', md: 'block' },
                             textAlign: 'right',
-                            [theme.breakpoints.down('lg')]: { textAlign: 'center' }
+                            [theme.breakpoints.down('lg')]: { textAlign: 'center' },
                         }}
                     >
                         <SubscribeImage src={imgMail} alt="Berry" />
@@ -85,12 +85,13 @@ const Subscribe = () => {
                                         component="div"
                                         sx={{ [theme.breakpoints.down('md')]: { fontSize: '1.125rem' } }}
                                     >
-                                        Subscribe
+                                        Follow
                                     </Typography>
                                 </Grid>
                                 <Grid item sm={12}>
                                     <Typography variant="body2">
-                                        Subscribe for the latest news &#38; updates of Berry admin template. We never send spam newsletters.
+                                        Follow us for the latest news &#38; updates of Perry Digital. We never send spam
+                                        newsletters.
                                     </Typography>
                                 </Grid>
                                 <Grid item sm={12}>
